@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Ensures portfolio works on all devices -->
+    <meta name="viewport" content="width=device-width, intial-scale = 1.0" />
+    <title>FrankLiu Portfolio Website</title>
+    <script
+      src="https://kit.fontawesome.com/17ff5a86ed.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+
+    <!-- Update with your preferred fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/devLiu.png" alt="" />
+      </div>
+
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <!-- List is a subcomponent of the navigation -->
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#schedules" class="nav__link">My Schedules</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <!-- class for styling and id for anchoring -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Frank Liu</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">learning FED</p>
+      <img
+        src="images/mac.png"
+        alt="A picture of Frank Liu Smiling"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- My schedule -->
+    <section class="my-schedules" id="schedules">
+      <h2 class="section__title section__title--schedules">
+        Undergraduate Coursework
+      </h2>
+      <div class="schedules">
+        <div class="schedule">
+          <h3>Fall 2021</h3>
+
+          <p>
+            <a
+              href="https://www2.eecs.berkeley.edu/Courses/CS61A/"
+              class="schedule__classes schedule__classes--links"
+              >The Structure and Interpretation of Computer Programs (CS61A)</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www2.eecs.berkeley.edu/Courses/CS197/"
+              class="schedule__classes schedule__classes--links"
+              >Field Study (COMPSCI 197)</a
+            >
+          </p>
+          <p>
+            <a
+              href="http://guide.berkeley.edu/courses/nusctx/"
+              class="schedule__classes schedule__classes--links"
+              >Introduction to Human Nutrition (NUSCTX 10)</a
+            >
+          </p>
+          <p>
+            <a
+              href="http://guide.berkeley.edu/courses/sociol/"
+              class="schedule__classes schedule__classes--links"
+              >Principles of Sociology: American Cultures (SOCIOL 3AC)</a
+            >
+          </p>
+          <p>
+            <a
+              href="http://guide.berkeley.edu/courses/ugba/"
+              class="schedule__classes schedule__classes--links"
+              >Principles of Business (UGBA 10)</a
+            >
+          </p>
+        </div>
+        <div class="schedule">
+          <h3>Spring 2022</h3>
+          <p>
+            <a
+              href="http://guide.berkeley.edu/courses/asamst/"
+              class="schedule__classes schedule__classes--links"
+              >Introduction to the History of Asians in the United States
+              (ASAMST 20A)</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www2.eecs.berkeley.edu/Courses/CS61B/"
+              class="schedule__classes schedule__classes--links"
+              >Data Structures (CS61B)</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www2.eecs.berkeley.edu/Courses/CS197/"
+              class="schedule__classes schedule__classes--links"
+              >Field Study (COMPSCI 197 FLD 215)</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www2.eecs.berkeley.edu/Courses/CS197/"
+              class="schedule__classes schedule__classes--links"
+              >Field Study (COMPSCI 197 FLD 232)</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www2.eecs.berkeley.edu/Courses/EE16A/"
+              class="schedule__classes schedule__classes--links"
+              >Designing Information Devices and Systems I (EECS 16A)</a
+            >
+          </p>
+        </div>
+        <div class="schedule">
+          <h3>Fall 2022 (In Progress)</h3>
+          <p>
+            <a
+              href="http://guide.berkeley.edu/courses/legalst/"
+              class="schedule__classes schedule__classes--links"
+              >Membership and Migration: Empirical and Normative Perspectives
+              (LEGALST C134)</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www2.eecs.berkeley.edu/Courses/CS70/"
+              class="schedule__classes schedule__classes--links"
+              >Discrete Mathematics and Probability Theory (COMPSCI 70)</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://data.berkeley.edu/education/courses/data-8"
+              class="schedule__classes schedule__classes--links"
+              >Foundations of Data Science (DATA C8)</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <a href="#work" class="btn">My Projects</a>
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        motivated & ambitious
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          My name is Frank, and I am a student at UC Berkeley studying computer
+          science. My home is in New Jersey, but I am starting to like the Bay
+          Area. I am the middle child of two brothers and live with two cats. My
+          hobbies include playing tennis, gymming, singing, and watching
+          Netflix.
+        </p>
+        <p>
+          Currently, I am undecided over what field I see myself working in. I
+          do know that I am passionate about doing work for the social good. I
+          find technology a gateway to unifying the international world, and I
+          am excited for what the future holds.
+        </p>
+      </div>
+
+      <img src="images/frank.png" alt="Me" class="about-me__img" />
+    </section>
+
+    <!-- My Projects -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My Projects</h2>
+      <p class="section__subtitle section__subtitle--work">
+        A selection of my range of projects
+      </p>
+
+      <div class="portfolio">
+        <!-- Portfolio project 01 -->
+        <a href="portfolio-gitlet.html" class="portfolio__item">
+          <img src="images/gitlet.png" alt="Project 1" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio project 02 -->
+        <a href="portfolio-ataxx.html" class="portfolio__item">
+          <img src="images/ataxx.png" alt="Project 2" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio project 03 -->
+        <a href="portfolio-enigma.html" class="portfolio__item">
+          <img src="images/enigma.png" alt="Project 3" class="portfolio__img" />
+        </a>
+        <!-- Portfolio project 04 -->
+        <a href="portfolio-scheme.html" class="portfolio__item">
+          <img src="images/scheme.png" alt="Project 4" class="portfolio__img" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:frank.j.liu@berkeley.edu" class="footer__link"
+        >frank.j.liu@berkeley.edu</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/frankliu098">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/frank-liu-2133591a3/"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.facebook.com/frank.liu.56808/"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.instagram.com/frankliu098/"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
